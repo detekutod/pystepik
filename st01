@@ -1,0 +1,113 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python38564bit6b29804c48f64bba82d22488806c7794",
+   "display_name": "Python 3.8.5 64-bit"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[1, 2, 3, 4, 5, 5, 5, 6, 6, 13, 14, 15, 15, 15]\n[1, 2, 3, 4, 5, 6, 13, 14, 15]\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = None\n",
+    "N = []\n",
+    "while n != 0:\n",
+    "    n = int(input())\n",
+    "    if n != 0:\n",
+    "        N.append(n)\n",
+    "print(N)\n",
+    "\n",
+    "newList = []\n",
+    "for k in range(0,len(N)):\n",
+    "    if N[k] not in newList:\n",
+    "        newList.append(N[k])\n",
+    "\n",
+    "print(newList)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "old:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nnew:  []\n"
+     ]
+    }
+   ],
+   "source": [
+    "obj = None\n",
+    "objects = []\n",
+    "while obj != 0:\n",
+    "    obj = int(input())\n",
+    "    if obj != 0:\n",
+    "        objects.append(n)\n",
+    "# print(objects)\n",
+    "newObjects = []\n",
+    "for k in range(0,len(objects)):\n",
+    "    if objects[k] in newObjects == False:\n",
+    "        newObjects.append(objects[k])\n",
+    "# out\n",
+    "print('old: ',objects)\n",
+    "print('new: ',newObjects)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "False\nTrue\nFalse\nFalse\n"
+     ]
+    }
+   ],
+   "source": [
+    "# пробуем ту же самую проверку, но через IS\n",
+    "print(1 is 2)\n",
+    "print(5 is 5)\n",
+    "print([1,2] is [1,2])\n",
+    "print([1] is [1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}
